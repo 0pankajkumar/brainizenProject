@@ -16,3 +16,6 @@
     a. The grid/table page with have 2 tables having pagination – one below the other, top table will have values populated
 
     b. Clicking any of the cell (e.g. click on Count 3 as shown below) of the top table will populate some values in second table
+
+
+Problem statement pictorial : ![picture alt](https://raw.githubusercontent.com/805bluebell/brainizenProject/master/problemStatement.png "Problem statement")
