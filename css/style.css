@@ -1,0 +1,78 @@
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 20px;
+	background: #ececec;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+#domain1 {
+	margin-left: 10rem;
+	width: 90%;
+}
+
+#domain2 {
+	display: flex;
+	flex-wrap: ;
+	align-items: center;
+	padding: 0 10px;
+	margin-left: 10rem;
+}
+
+#Atables {
+	margin-left: 10rem;
+}
+
+#dt-table_wrapper {
+	width: 35%;
+	margin-right: 2%;
+}
+
+#chart {
+	width: 70%;
+}
+
+table {
+	text-align: center;
+}
+
+.sidenav {
+	min-height: 100vh;
+	margin-left: 0rem;
+	-webkit-transition: margin .25s ease-out;
+	-moz-transition: margin .25s ease-out;
+	-o-transition: margin .25s ease-out;
+	transition: margin .25s ease-out;
+}
+
+@media screen and (max-width: 1200px) {
+	#dt-table_wrapper,
+	#chart {
+		width: 100%;
+		margin: 20px 0;
+	}
+	#dt-table_wrapper {
+		margin-right: 0;
+	}
+}
+
+
+/*For showing table upon chart click*/
+
+.show {
+	margin-top: 2%;
+	background-color: #CE9127;
+	width: 96%;
+	height: 10%;
+	padding-left: 4%;
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+

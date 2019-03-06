@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Data Visualization With DataTables.js and Highcharts.js</title>
+      <link rel='stylesheet' href='https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css'>
+      <link href="css/sideNavStyle.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="sidenav">
+         <button onclick="myFunction()">Admin Dashboard</button>
+      </div>
+      <div class="main form-group" id="myDIV">
+         <select class="form-control" id="purpose">
+            <option value="" disabled selected>Select your option</option>
+            <option value="1">Domain 1</option>
+            <option value="2">Domain 2</option>
+         </select>
+      </div>
+      <! Charts and tables below>
+      <div id="domain1" style="display:none;">
+         <div id="chart1"></div>
+         <div id="Atables" style='display:none;'>
+            <! Table 1 here>
+            <table id="Atable1">
+               <thead>
+                  <tr>
+                     <th>Country</th>
+                     <th>Population (2017)</th>
+                     <th>Density (P/Km²)</th>
+                     <th>Med. Age</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>China</td>
+                     <td>1409517397</td>
+                     <td>150 </td>
+                     <td>37</td>
+                  </tr>
+                  <tr>
+                     <td>India</td>
+                     <td>1339180127</td>
+                     <td>450</td>
+                     <td>27</td>
+                  </tr>
+                  <tr>
+                     <td>U.S.</td>
+                     <td>324459463</td>
+                     <td>35</td>
+                     <td>38</td>
+                  </tr>
+                  <tr>
+                     <td>Indonesia</td>
+                     <td>263991379</td>
+                     <td>146</td>
+                     <td>28</td>
+                  </tr>
+               </tbody>
+            </table>
+            <! Table 2 here>
+            <! Table 2>
+            <table id="Atable2" class="table table-dark">
+               <thead>
+                  <tr>
+                     <th>Country</th>
+                     <th>Area (Km²)</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      </div>
+      <! Domain 2 begins>
+      <div id="domain2" style="display:none;">
+         <div id="chart2"></div>
+      </div>
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js'></script>
+      <script src='https://code.highcharts.com/highcharts.js'></script>
+      <script src='https://code.highcharts.com/modules/no-data-to-display.js'></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>
+         function myFunction() {
+             var x = document.getElementById("myDIV");
+             if (x.style.display === "none") {
+                 x.style.display = "block";
+             } else {
+                 x.style.display = "none";
+             }
+         }
+      </script>
+      <script src="js/index.js"></script>
+      <script src="js/index2.js"></script>
+      <script src="js/selection.js"></script>
+   </body>
+</html>
+
